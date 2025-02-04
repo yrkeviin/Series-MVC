@@ -1,0 +1,28 @@
+{
+  "name": "series-mvc",
+  "version": "1.0.0",
+  "description": "Atividade de series utilizando o back-end.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yrkeviin/Series-MVC.git"
+  },
+  "keywords": [
+    "senai",
+    "ds"
+  ],
+  "author": "Kevin Lima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yrkeviin/Series-MVC/issues"
+  },
+  "homepage": "https://github.com/yrkeviin/Series-MVC#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
