@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/yrkeviin/Series-MVC#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.21.2",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "uuid": "^11.0.5"
   }
 }
