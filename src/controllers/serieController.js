@@ -1,5 +1,5 @@
-const Serie = require("../models/Serie");
-const SerieList = require("../models/SerieList");
+const Serie = require("../models/Serie.js");
+const SerieList = require("../models/SerieList.js");
 
 const lista = new SerieList();
 
@@ -17,7 +17,7 @@ const router = {
             }
             const serie = new Serie(title, genre, classification, plays);
             lista.addSerie(serie);
-            res.status(200).json({ message: "Criado com sucesso!", music });
+            res.status(200).json({ message: "Criado com sucesso!", serie });
         } catch (error) {
             res.status(400).json({ message: "Erro ao criar série!", error: error.message,
             })
@@ -30,7 +30,7 @@ const router = {
             res.status(200).json(series);
         } catch {
             res.status(404).json({
-                message: "Erro ao buscar músicas!", error: error.message,
+                message: "Erro ao buscar séries!", error: error.message,
             });
         }
     },
@@ -66,8 +66,8 @@ const router = {
                 serie,
             });
         } catch (error) {
-            res.status(404).sjon ({
-                message: "Erro ao deletar música",
+            res.status(404).json({
+                message: "Erro ao deletar série",
                 error: error.message,
             });
         }

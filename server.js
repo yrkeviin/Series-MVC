@@ -12,8 +12,6 @@ app.use(express.json());
 
 app.use("/api", serieRoutes);
 
-app.get("/api", serieRoutes);
-
 app.get("/", (req, res) => {
     res.send("EUUUU AMOOO BACK");
 });
